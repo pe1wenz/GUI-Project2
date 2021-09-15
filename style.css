@@ -1,0 +1,19 @@
+:root{ 
+    /*
+    affacting background color for the entire html file.
+    */
+    background-color:paleturquoise;
+}
+
+#page-banner{
+    position:fixed;
+    margin-top: -5mm;
+    margin-left: -4mm;
+    padding: 4mm    ;
+    background-color:paleturquoise;
+}
+
+#main-resume{
+    min-height:fit-content;
+    padding-top: 10%;
+}
