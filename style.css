@@ -3,17 +3,106 @@
     affacting background color for the entire html file.
     */
     background-color:paleturquoise;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
-#page-banner{
+header{
+    /*
+        make the top banner fixed and always seen when user scroll up or down.
+        have a border for the banner
+    */
+    text-align: center;
     position:fixed;
-    margin-top: -5mm;
-    margin-left: -4mm;
-    padding: 4mm    ;
-    background-color:paleturquoise;
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    width: 100%;
+    background-color:bisque;
+    color:black;
+    border: solid;
+    border-width:thick;
+    border-color: black;
+}
+
+a{
+    /*
+        Let a link font bolder
+    */
+    font-weight: bold;
+}
+a :link{
+    /*
+        Let a link have a different color before it is clicked
+    */
+    color:rgb(158, 102, 29);   
+}
+
+a:visited {
+    /*
+        Let a link have the same color after it is clicked
+    */
+    color:rgb(158, 102, 29);    
+}
+
+.resume-elements{
+    /*
+        Let four links in the top banner spread evenly across the page in a row
+    */
+    text-align: center;
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
 }
 
 #main-resume{
+    /*
+        let the main material have padding at top so they don't overlap with top banner
+    */
     min-height:fit-content;
-    padding-top: 10%;
+    padding-top:5%;
+}
+
+section{
+    /*
+        let four sections spread evenly and let text be center in each grid.
+    */
+    display: inline-grid;
+    width: 49%;
+    position:inherit;
+    text-align: center;
+}
+
+  ul li{
+    /*
+        Change li object's color, font, weight, and have a nice looking border. 
+    */
+    list-style-type: none;
+    display: list-item;
+    padding: 5px 10px;
+    color:sienna;
+    margin: 0 3px;
+    border-radius: 10%;
+    border-width: 5mm;
+    border-color: black;
+  }
+
+img {
+    /*
+        Change the image size and center it.
+    */
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 100%;
+  }
+
+h2{
+    /*
+        make four categories' size bigger and have a different style and color.
+    */
+    font-size:x-large;
+    padding-top: 15%;
+    border-top-width: 4mm;
+    border-top:saddlebrown;
+    border-top-style:double;
+    font-family: 'Dancing Script', cursive;
 }
